@@ -1,0 +1,106 @@
+.main{
+    width: 100%;
+    height: 50vh;
+    margin-top: 200px;
+}
+h1{
+    text-align: center;
+}
+
+.main .bloc{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    gap: 5%;
+    border: solid red;
+    background-color: green;
+}
+
+/* left bloc */
+
+
+.main .bloc .blocleft{
+    width: 40%;
+    height: 600px;
+    background-color: black;
+    float: left;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .bloc .blocleft .localisation{
+    width: 80%;
+    height: 300px;
+    background-color: red;
+    margin-top: 15px;
+   
+}
+.main .bloc .blocleft .petitbloc{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main .bloc .blocleft .petitbloc .mail{
+    width: 35%;
+    height: 200px;
+    background-color: red;
+
+  
+}
+.main .bloc .blocleft .petitbloc .num{
+    width: 35%;
+    height: 200px;
+    background-color: red;
+
+}
+
+
+/* //right bloc */
+.main .bloc .blocright{
+    width: 40%;
+    height: 600px;
+    float: right;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.main .bloc .blocright button{
+    width: 40%;
+    height: 50px;
+    border-radius: 1em;
+    background-color: red;
+}
+
+.main .bloc .blocright .inputbloc{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .bloc .blocright .inputbloc input{
+    width: 40%;
+    height: 100px;  
+}
+
+
+.main .bloc .blocright .area{
+    width: 90%;
+    height: 300px;
+}
+
