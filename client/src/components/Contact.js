@@ -1,6 +1,8 @@
 import "./Contact.css"
 
 const Contact = () => {
+
+    
     return (
         <div className="main">
             <h1>CONTACT</h1>

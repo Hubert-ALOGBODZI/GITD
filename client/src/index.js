@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 
 //importer image
-import images from'./images/logo1.png';
+// import images from'./images/logo1.png';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

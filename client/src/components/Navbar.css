@@ -11,7 +11,7 @@ html{
 }
 /*===========================================navbar====================================================*/
 nav{
-  background: skyblue;
+  background: #0F5463;
   height: 80px;
   width: 100%;
   position: fixed;
@@ -41,20 +41,36 @@ nav ul li a{
   text-decoration: none;
   list-style: none;
 }
+nav ul li:nth-child(5) a{
+  background-color: aliceblue;
+   border: 1px solid black;
+   color: #0F5463;
+   border-radius: 6em;
+  padding: 5%;
+}
 nav ul li a.active,
 nav ul li a:hover{
-  color:green;
+  color:#2BB9D8;
   transition: .5s;
 }
+/* nav ul li Link .localisation{
+   background-color: aliceblue;
+   border: 1px solid black;
+   color: #0F5463;
+   /* width: 80px;
+   height: 60px; 
+} */
 .checkbtn{
   font-size: 30px;
-  color:green;
+  color:white;
   float: right;
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
 }
+
+
 #check{
   display: none;
 }
@@ -64,12 +80,7 @@ nav ul li a:hover{
       padding-left: 50px;
   }
 }
-@media(min-width:953px) {
-  .about .main{
-      display: flex;
-      flex-direction: row;
-  }
-}
+
 @media (max-width:852px){
   .checkbtn{
       display: block;
