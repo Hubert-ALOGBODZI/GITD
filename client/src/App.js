@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 // import Doctors from './components/Doctors';
 import Home from './components/Home';
-// import Contact from './components/Contact';
+import Contact from './components/Contact';
 // import Footer from './components/Footer';
 // import Login from './components/Login';
 // import Fire from './components/Fire';
@@ -143,7 +143,7 @@ function App() {
             <Route exact path='/' element={<Home />} />
 
             {/* <Route path='/Doctors' element={<Doctors />} /> */}
-            {/* <Route exact path='/Contact' element={<Contact />} /> */}
+            <Route exact path='/Contact' element={<Contact />} />
             {/* <Route exact path='/Footer' element={<Footer />} /> */}
 
 
@@ -171,6 +171,7 @@ function App() {
 
 
           {/* </div> */}
+{/* <Footer /> */}
         </>
       </BrowserRouter>
 
