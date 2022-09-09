@@ -14,6 +14,9 @@ import Contact from './components/Contact';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import LandingPage from './components/LandingPage';
+import Localisation from './components/Localisation';
 // import { ToastContainer } from 'react-toastify';
 
 
@@ -23,6 +26,19 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
+
+  return (
+
+    <div className="App">
+
+<Localisation />
+{/* <LandingPage /> */}
+      
+    </div>
+  );
+}
+
+export default App;
 
   // const [user, setUser] = useState('');
   // const [email, setEmail] = useState('');
@@ -102,10 +118,10 @@ function App() {
   //   authListner();
   // }, [])
 
-  return (
+  
 
-    <div className="App">
-      {/* <div className="navbar">
+
+{/* <div className="navbar">
       <Navbar />
       </div>
        <div className="main">
@@ -129,21 +145,21 @@ function App() {
        </div> */}
 
 
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
         {/* <div className="App"> */}
 
 
         {/* <ToastContainer /> */}
 
-        <>
-          <Navbar />
-          <Routes>
+        {/* <> */}
+          {/* <Navbar /> */}
+          {/* <Routes> */}
 
 
-            <Route exact path='/' element={<Home />} />
+            {/* <Route exact path='/' element={<Home />} /> */}
 
             {/* <Route path='/Doctors' element={<Doctors />} /> */}
-            <Route exact path='/Contact' element={<Contact />} />
+            {/* <Route exact path='/Contact' element={<Contact />} /> */}
             {/* <Route exact path='/Footer' element={<Footer />} /> */}
 
 
@@ -167,27 +183,19 @@ function App() {
             {/* <Route path='update/:id' element={<Add />} />
           <Route path='View/:id' element={<View />} /> */}
 
-          </Routes>
+          {/* </Routes> */}
 
 
           {/* </div> */}
 {/* <Footer /> */}
-        </>
-      </BrowserRouter>
+        {/* </> */}
+      {/* </BrowserRouter> */}
 
       {/* <Home /> */}
       {/* <Doctors /> */}
 
       {/* <Contact /> */}
       {/* <Footer /> */}
-    </div>
-  );
-}
-
-export default App;
-
-
-
 
 
 
