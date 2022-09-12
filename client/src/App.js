@@ -9,14 +9,19 @@ import Contact from './components/Contact';
 // import Login from './components/Login';
 // import Fire from './components/Fire';
 // import Hero from './components/Hero';
+import Consultation from './components/Consultation';
 
 // import React, { useState, useEffect } from 'react';
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import "./style.scss";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import LandingPage from './components/LandingPage';
 import Localisation from './components/Localisation';
+// import Login from "../src/pages/Login"
 // import { ToastContainer } from 'react-toastify';
 
 
@@ -31,94 +36,101 @@ function App() {
 
     <div className="App">
 
-<Localisation />
-{/* <LandingPage /> */}
-      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      {/* <LandingPage /> */}
+
     </div>
   );
 }
 
 export default App;
 
-  // const [user, setUser] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [password, setPassword] = useState('');
+// const [user, setUser] = useState('');
+// const [email, setEmail] = useState('');
+// const [password, setPassword] = useState('');
 
 
-  // const [emailError, setEmailError] = useState('');
-  // const [passwordError, setPasswordError] = useState('');
+// const [emailError, setEmailError] = useState('');
+// const [passwordError, setPasswordError] = useState('');
 
-  // const [hasAccount, setHasAccount] = useState('false');
+// const [hasAccount, setHasAccount] = useState('false');
 
-  // const clearInputs = () => {
-  //   setEmail('');
-  //   setPassword('');
-  // }
+// const clearInputs = () => {
+//   setEmail('');
+//   setPassword('');
+// }
 
-  // const clearErrors = () => {
-  //   setEmailError('');
-  //   setPasswordError('');
-  // }
+// const clearErrors = () => {
+//   setEmailError('');
+//   setPasswordError('');
+// }
 
-  // const handleLogin = () => {
-  //   clearErrors();
-  //   Fire
-  //     .auth()
-  //     .signInWidthEmailAndPassword(email, password)
-  //     .catch(err => {
-  //       switch (err.code) {
-  //         case "auth/invalid-email":
-  //         case "auth/user-disabled":
-  //         case "auth/user-not-found":
-  //           setEmailError(err.message);
-  //           break;
+// const handleLogin = () => {
+//   clearErrors();
+//   Fire
+//     .auth()
+//     .signInWidthEmailAndPassword(email, password)
+//     .catch(err => {
+//       switch (err.code) {
+//         case "auth/invalid-email":
+//         case "auth/user-disabled":
+//         case "auth/user-not-found":
+//           setEmailError(err.message);
+//           break;
 
-  //         case "auth/wrong-password":
-  //           setPasswordError(err.message);
-  //           break;
-  //       }
-  //     })
-  // };
+//         case "auth/wrong-password":
+//           setPasswordError(err.message);
+//           break;
+//       }
+//     })
+// };
 
-  // const handleSignup = () => {
-  //   clearErrors();
-  //   Fire
-  //     .auth()
-  //     .createUserWidthEmailAndPassword(email, password)
-  //     .catch(err => {
-  //       switch (err.code) {
-  //         case "auth/email-already-in-use":
-  //         case "auth/invalid-email":
+// const handleSignup = () => {
+//   clearErrors();
+//   Fire
+//     .auth()
+//     .createUserWidthEmailAndPassword(email, password)
+//     .catch(err => {
+//       switch (err.code) {
+//         case "auth/email-already-in-use":
+//         case "auth/invalid-email":
 
-  //           setEmailError(err.message);
-  //           break;
+//           setEmailError(err.message);
+//           break;
 
-  //         case "auth/weak-password":
-  //           setPasswordError(err.message);
-  //           break;
-  //       }
-  //     })
-  // };
+//         case "auth/weak-password":
+//           setPasswordError(err.message);
+//           break;
+//       }
+//     })
+// };
 
-  // const handleLogout = () => {
-  //   Fire.auth().signOut();
-  // };
+// const handleLogout = () => {
+//   Fire.auth().signOut();
+// };
 
-  // const authListner = () => {
-  //   Fire.auth().onAuthStateChanged((user) => {
-  //     if (user) {
-  //       clearInputs();
-  //       setUser(user);
-  //     } else {
-  //       setUser("");
-  //     }
-  //   });
-  // };
-  // useEffect(() => {
-  //   authListner();
-  // }, [])
+// const authListner = () => {
+//   Fire.auth().onAuthStateChanged((user) => {
+//     if (user) {
+//       clearInputs();
+//       setUser(user);
+//     } else {
+//       setUser("");
+//     }
+//   });
+// };
+// useEffect(() => {
+//   authListner();
+// }, [])
 
-  
+
 
 
 {/* <div className="navbar">
@@ -145,25 +157,25 @@ export default App;
        </div> */}
 
 
-      {/* <BrowserRouter> */}
-        {/* <div className="App"> */}
+{/* <BrowserRouter> */ }
+{/* <div className="App"> */ }
 
 
-        {/* <ToastContainer /> */}
+{/* <ToastContainer /> */ }
 
-        {/* <> */}
-          {/* <Navbar /> */}
-          {/* <Routes> */}
-
-
-            {/* <Route exact path='/' element={<Home />} /> */}
-
-            {/* <Route path='/Doctors' element={<Doctors />} /> */}
-            {/* <Route exact path='/Contact' element={<Contact />} /> */}
-            {/* <Route exact path='/Footer' element={<Footer />} /> */}
+{/* <> */ }
+{/* <Navbar /> */ }
+{/* <Routes> */ }
 
 
-            {/* <Route exact path='/Login' element={<Login
+{/* <Route exact path='/' element={<Home />} /> */ }
+
+{/* <Route path='/Doctors' element={<Doctors />} /> */ }
+{/* <Route exact path='/Contact' element={<Contact />} /> */ }
+{/* <Route exact path='/Footer' element={<Footer />} /> */ }
+
+
+{/* <Route exact path='/Login' element={<Login
             email={email}
             setEmail={setEmail}
             password={password}
@@ -180,22 +192,22 @@ export default App;
 
 
 
-            {/* <Route path='update/:id' element={<Add />} />
+{/* <Route path='update/:id' element={<Add />} />
           <Route path='View/:id' element={<View />} /> */}
 
-          {/* </Routes> */}
+{/* </Routes> */ }
 
 
-          {/* </div> */}
-{/* <Footer /> */}
-        {/* </> */}
-      {/* </BrowserRouter> */}
+{/* </div> */ }
+{/* <Footer /> */ }
+{/* </> */ }
+{/* </BrowserRouter> */ }
 
-      {/* <Home /> */}
-      {/* <Doctors /> */}
+{/* <Home /> */ }
+{/* <Doctors /> */ }
 
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+{/* <Contact /> */ }
+{/* <Footer /> */ }
 
 
 

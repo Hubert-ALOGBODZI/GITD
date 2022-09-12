@@ -120,9 +120,9 @@ const Localisation = () => {
                                 <div className="message">
                                     clique pour réserver une place -------
                                 </div>
-                                <Link to="/Home">
+                                {/* <Link to="/Home"> */}
                                     <button>REJOINDRE</button>
-                                </Link>
+                                {/* </Link> */}
                             </div>
                         </div>
                     </div>

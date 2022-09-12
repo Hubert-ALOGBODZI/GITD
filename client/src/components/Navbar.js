@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 
 
-import "./Navbar.css"
+import "../CSS/Navbar.css"
 const Navbar = () => {
 
     return (

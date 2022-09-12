@@ -18,7 +18,7 @@
 
 
 
-import "./Home.css"
+import "../CSS/Home.css"
 const Home = () => {
     return (
     
